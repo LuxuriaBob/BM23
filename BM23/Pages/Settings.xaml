@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BM23.Pages.Settings"
+             BackgroundColor="Indigo">
+    <AbsoluteLayout
+        HorizontalOptions="Start">
+        <Label
+            Text="Audio"
+            AbsoluteLayout.LayoutBounds="30,10,200,100"
+            FontSize = "20"/>
+        <Label
+            Text="Master Sound"
+            AbsoluteLayout.LayoutBounds="500,60,200,100"
+            FontSize = "20"/>
+        <Slider
+            Minimum="0" Maximum="1"
+            AbsoluteLayout.LayoutBounds="490,80,200,50"
+            />
+        <Label
+            Text="Music Sound"
+            AbsoluteLayout.LayoutBounds="500,120,200,100"
+            FontSize = "20"/>
+         <Slider
+            Minimum="0" Maximum="1"
+            AbsoluteLayout.LayoutBounds="490,140,200,50"
+            />
+        <Label
+            Text="Effect Sound"
+            AbsoluteLayout.LayoutBounds="500,180,200,100"
+            FontSize = "20"/>
+        <Slider
+            Minimum="0" Maximum="1"
+            AbsoluteLayout.LayoutBounds="490,200,200,50"
+            />
+        <Label
+            Text="Data"
+            AbsoluteLayout.LayoutBounds="30,300,200,100"
+            FontSize = "20"/>
+        <Label
+            Text="Auto Save"
+            AbsoluteLayout.LayoutBounds="500,335,100,100"
+            FontSize = "20"/>
+        <Switch
+            IsToggled="false"
+            AbsoluteLayout.LayoutBounds="650,335,40,50"
+            OnColor="AliceBlue"/>
+        <Label
+            Text="Fake Players"
+            AbsoluteLayout.LayoutBounds="500,383,150,150"
+            FontSize = "20"/>
+        <Switch
+            IsToggled="false"
+            AbsoluteLayout.LayoutBounds="650,380,40,50"
+            OnColor="AliceBlue"/>
+    </AbsoluteLayout>
+</ContentPage>

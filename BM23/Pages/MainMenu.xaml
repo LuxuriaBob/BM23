@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BM23.Pages.MainMenu"
+             BackgroundImageSource="basketball-background.jpg">
+    <AbsoluteLayout>
+        <Button
+            x:Name="NewGameBtn"
+            AbsoluteLayout.LayoutBounds="150,600,30,40"
+            Text="New Game"
+            FontSize="24"
+            BackgroundColor="Transparent"
+            Clicked="NewGameBtn_Clicked"
+            HorizontalOptions="Start"/>
+        <Button
+            x:Name="LoadGameBtn"
+            AbsoluteLayout.LayoutBounds="150,645,30,40"
+            Text="Load Game"
+            FontSize="24"
+            BackgroundColor="Transparent"
+            Clicked="LoadGameBtn_Clicked"
+            HorizontalOptions="Start"/>
+        <Button
+            x:Name="SettingsBtn"
+            AbsoluteLayout.LayoutBounds="150,690,30,40"
+            Text="Settings"
+            FontSize="24"
+            BackgroundColor="Transparent"
+            Clicked="SettingsBtn_Clicked"
+            HorizontalOptions="Start"/>
+        <Button
+            x:Name="ExitBtn"
+            AbsoluteLayout.LayoutBounds="150,735,30,40"
+            Text="Exit"
+            FontSize="24"
+            BackgroundColor="Transparent"
+            Clicked="ExitBtn_Clicked"
+            HorizontalOptions="Start"/>
+    </AbsoluteLayout>
+</ContentPage>
