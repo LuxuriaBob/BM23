@@ -11,7 +11,7 @@ public partial class MainMenu : ContentPage
 
     void NewGameBtn_Clicked(System.Object sender, System.EventArgs e)
     {
-
+        Navigation.PushAsync(new NewGame());
     }
 
     void LoadGameBtn_Clicked(System.Object sender, System.EventArgs e)

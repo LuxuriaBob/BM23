@@ -56,6 +56,7 @@
 	  <None Remove="Pages\" />
 	  <None Remove="Resources\basketball-background.jpg" />
 	  <None Remove="Resources\AppIcon\Screenshot 2023-05-30 at 16.26.53 copy.svg" />
+	  <None Remove="Resources\watercolor-warriors-png-logo-20.png" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Pages\" />
@@ -63,6 +64,7 @@
 	<ItemGroup>
 	  <BundleResource Include="Resources\basketball-background.jpg" />
 	  <BundleResource Include="Resources\AppIcon\appicon.svg" />
+	  <BundleResource Include="Resources\warriors-logo.png" />
 	</ItemGroup>
 	<ItemGroup>
 	  <MauiIcon Remove="Resources\AppIcon\appicon.svg" />

@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BM23.Pages.NewGame"
+             BackgroundColor="Gold">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <Label
+                Text="First Name"
+                AbsoluteLayout.LayoutBounds="30,20,200,100"
+                FontSize = "20"
+                TextColor="Black"
+            />
+            <Entry
+                Placeholder="First Name"
+                AbsoluteLayout.LayoutBounds="220,20,150,30"
+                FontSize = "20"
+                TextColor="Black"
+                />
+            <Label
+                Text="Surname"
+                AbsoluteLayout.LayoutBounds="30,60,200,100"
+                FontSize = "20"
+                TextColor="Black"
+            />
+            <Entry
+                Placeholder="Surname"
+                AbsoluteLayout.LayoutBounds="220,60,150,30"
+                FontSize = "20"
+                TextColor="Black"
+            />
+             <Label
+                Text="Country"
+                AbsoluteLayout.LayoutBounds="30,100,200,100"
+                FontSize = "20"
+                TextColor="Black"
+             />
+            <Picker
+                x:Name="countryPicker"
+                Title="Select a country"
+                AbsoluteLayout.LayoutBounds="220,88,200,50"
+                FontSize= "20"
+                TextColor="Black"
+                >
+              <Picker.ItemsSource>
+              <x:Array Type= "{x:Type x:String}">
+                  <x:String>Turkey</x:String>
+                  <x:String>United States of America</x:String>
+                  <x:String>Germany</x:String>
+                  <x:String>England</x:String>
+                  <x:String>France</x:String>
+                  <x:String>Japan</x:String>
+                  <x:String>South Korea</x:String>
+              </x:Array>
+              </Picker.ItemsSource>
+            </Picker>
+            <Label
+                Text="Select a currency"
+                AbsoluteLayout.LayoutBounds="30,140,200,100"
+                FontSize = "20"
+                TextColor="Black"
+             />
+            <Picker
+                x:Name="courrencyPicker"
+                Title="Select a currency"
+                AbsoluteLayout.LayoutBounds="220,128,200,50"
+                FontSize= "20"
+                TextColor="Black"
+                >
+              <Picker.ItemsSource>
+              <x:Array Type= "{x:Type x:String}">
+                  <x:String>Turkish Lira</x:String>
+                  <x:String>US Dollar</x:String>
+                  <x:String>Euro</x:String>
+                  <x:String>Japanese Yen</x:String>
+                  <x:String>Korean Won</x:String>
+              </x:Array>
+              </Picker.ItemsSource>
+            </Picker>
+            <Label
+                Text="Select your gender"
+                AbsoluteLayout.LayoutBounds="30,180,200,100"
+                FontSize = "20"
+                TextColor="Black"
+             />
+            <Picker
+                x:Name="genderPicker"
+                Title="Select a gender"
+                AbsoluteLayout.LayoutBounds="220,168,200,50"
+                FontSize= "20"
+                TextColor="Black"
+                >
+              <Picker.ItemsSource>
+              <x:Array Type= "{x:Type x:String}">
+                  <x:String>Male</x:String>
+                  <x:String>Female</x:String>
+                  <x:String>Non-binary</x:String>
+                  <x:String>Transgender</x:String>
+              </x:Array>
+              </Picker.ItemsSource>
+            </Picker>
+            <Button
+                x:Name="PreviousBtn"
+                Text="Previous"
+                AbsoluteLayout.LayoutBounds="500,250,100,50"
+                Clicked="PreviousBtn_Clicked"
+                />
+            <Button
+                x:Name="NextBtn"
+                Text="Next"
+                AbsoluteLayout.LayoutBounds="605,250,100,50"
+                Clicked="NextBtn_Clicked"
+                />
+        </AbsoluteLayout>
+    </ContentPage.Content>        
+</ContentPage>

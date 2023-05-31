@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BM23.Pages.Settings"
-             BackgroundColor="Indigo">
+             BackgroundColor="SeaGreen">
     <AbsoluteLayout
         HorizontalOptions="Start">
         <Label
@@ -44,7 +44,7 @@
         <Switch
             IsToggled="false"
             AbsoluteLayout.LayoutBounds="650,335,40,50"
-            OnColor="AliceBlue"/>
+            OnColor="DeepPink"/>
         <Label
             Text="Fake Players"
             AbsoluteLayout.LayoutBounds="500,383,150,150"
@@ -52,6 +52,6 @@
         <Switch
             IsToggled="false"
             AbsoluteLayout.LayoutBounds="650,380,40,50"
-            OnColor="AliceBlue"/>
+            OnColor="MediumTurquoise"/>
     </AbsoluteLayout>
 </ContentPage>
