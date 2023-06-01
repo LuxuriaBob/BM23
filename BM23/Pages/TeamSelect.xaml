@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BM23.Pages.TeamSelect"
+             BackgroundColor= "AntiqueWhite">
+
+    <Grid RowDefinitions="50, 200, 200, 200, 200, 200, 200" ColumnDefinitions="200, 200,200,200, 200, 200, 200" Padding="50">
+        <Label
+            x:Name="chooseLabel"
+            Text="Choose a team"
+            FontSize="24"
+            TextColor="Black"
+            Grid.Row="0" Grid.Column="0"
+        />
+        <ImageButton x:Name="bostonBtn" Source="boston_celtics_logo.png" Scale="0.7" Grid.Row="1" Grid.Column="0" />
+        <ImageButton x:Name="milwaukeeBtn" Source="milwaukee_bucks_logo.png" Scale="0.7" Grid.Row="1" Grid.Column="1" />
+        <ImageButton x:Name="miamiBtn" Source="miami_heat_logo.png" Scale="0.7" Grid.Row="1" Grid.Column="2" />
+        <ImageButton x:Name="denverBtn" Source="denver_nuggets_logo.png" Scale="0.7" Grid.Row="1" Grid.Column="3" />
+        <ImageButton x:Name="sacramentoBtn" Source="sacramento_kings_logo.png" Scale="0.7" Grid.Row="1" Grid.Column="4" />
+        <ImageButton x:Name="memphisBtn" Source="memphis_grizzlies_logo.png" Scale="0.7" Grid.Row="1" Grid.Column="5" />
+        <ImageButton x:Name="philadelphiaBtn" Source="philadelphia_76ers_logo.png" Scale="0.7" Grid.Row="2" Grid.Column="0" />
+        <ImageButton x:Name="clevelandBtn" Source="cleveland_cavaliers_logo.png" Scale="0.7" Grid.Row="2" Grid.Column="1" />
+        <ImageButton x:Name="atlantaBtn" Source="atlanta_hawks_logo.png" Scale="0.7" Grid.Row="2" Grid.Column="2" />
+        <ImageButton x:Name="minnesotaBtn" Source="minnesota_timberwolves_logo.png" Scale="0.7" Grid.Row="2" Grid.Column="3" />
+        <ImageButton x:Name="phoenixBtn" Source="phoenix_suns_logo.png" Scale="0.7" Grid.Row="2" Grid.Column="4" />
+        <ImageButton x:Name="newOrleansBtn" Source="new_orleans_pelicans_logo.png" Scale="0.7" Grid.Row="2" Grid.Column="5" />
+        <ImageButton x:Name="newYorkBtn" Source="new_york_knicks_logo.png" Scale="0.7" Grid.Row="3" Grid.Column="0" />
+        <ImageButton x:Name="chicagoBtn" Source="chicago_bulls_logo.png" Scale="0.7" Grid.Row="3" Grid.Column="1" />
+        <ImageButton x:Name="washingtonBtn" Source="washington_wizards_logo.png" Scale="0.7" Grid.Row="3" Grid.Column="2" />
+        <ImageButton x:Name="oklahomaBtn" Source="oklahoma_city_thunder_logo.png" Scale="0.7" Grid.Row="3" Grid.Column="3" />
+        <ImageButton x:Name="goldenStateBtn" Source="golden_state_warriors_logo.png" Scale="0.7" Grid.Row="3" Grid.Column="4" />
+        <ImageButton x:Name="dallasBtn" Source="dallas_mavericks_logo.png" Scale="0.7" Grid.Row="3" Grid.Column="5" />
+        <ImageButton x:Name="brooklynBtn" Source="brooklyn_nets_logo.png" Scale="0.7" Grid.Row="4" Grid.Column="0" />
+        <ImageButton x:Name="indianaBtn" Source="indiana_pacers_logo.png" Scale="0.7" Grid.Row="4" Grid.Column="1" />
+        <ImageButton x:Name="orlandoBtn" Source="orlando_magic_logo.png" Scale="0.7" Grid.Row="4" Grid.Column="2" />
+        <ImageButton x:Name="utahBtn" Source="utah_jazz_logo.png" Scale="0.7" Grid.Row="4" Grid.Column="3" />
+        <ImageButton x:Name="laClippersBtn" Source="los_angeles_clippers_logo.png" Scale="0.7" Grid.Row="4" Grid.Column="4" />
+        <ImageButton x:Name="houstonBtn" Source="houston_rockets_logo.png" Scale="0.7" Grid.Row="4" Grid.Column="5" />
+        <ImageButton x:Name="torontoBtn" Source="toronto_raptors_logo.png" Scale="0.7" Grid.Row="5" Grid.Column="0" />
+        <ImageButton x:Name="detroitBtn" Source="detroit_pistons_logo.png" Scale="0.7" Grid.Row="5" Grid.Column="1" />
+        <ImageButton x:Name="charlotteBtn" Source="charlotte_hornets_logo.png" Scale="0.7" Grid.Row="5" Grid.Column="2" />
+        <ImageButton x:Name="portlandBtn" Source="portland_trail_blazers_logo.png" Scale="0.7" Grid.Row="5" Grid.Column="3" />
+        <ImageButton x:Name="laLakersBtn" Source="los_angeles_lakers_logo.png" Scale="0.7" Grid.Row="5" Grid.Column="4" />
+        <ImageButton x:Name="sanAntonioBtn" Source="san_antonio_spurs_logo.png" Scale="0.7" Grid.Row="5" Grid.Column="5" />
+
+    </Grid>
+</ContentPage>

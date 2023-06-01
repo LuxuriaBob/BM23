@@ -46,6 +46,36 @@
 
 		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
+		<MauiImage Include="Resources\Images\team_logos\milwaukee_bucks_logo.png" />
+		<MauiImage Include="Resources\Images\team_logos\atlanta_hawks_logo.png" />
+		<MauiImage Include="Resources\Images\team_logos\boston_celtics_logo.png" />
+		<MauiImage Include="Resources\Images\team_logos\brooklyn_nets_logo.png" />
+		<MauiImage Include="Resources\Images\team_logos\charlotte_hornets_logo.png" />
+		<MauiImage Include="Resources\Images\team_logos\chicago_bulls_logo.png" />
+		<MauiImage Include="Resources\Images\team_logos\cleveland_cavaliers_logo.png" />
+		<MauiImage Include="Resources\Images\team_logos\dallas_mavericks_logo.png" />
+		<MauiImage Include="Resources\Images\team_logos\denver_nuggets_logo.png" />
+		<MauiImage Include="Resources\Images\team_logos\detroit_pistons_logo.png" />
+		<MauiImage Include="Resources\Images\team_logos\golden_state_warriors_logo.png" />
+		<MauiImage Include="Resources\Images\team_logos\houston_rockets_logo.png" />
+		<MauiImage Include="Resources\Images\team_logos\indiana_pacers_logo.png" />
+		<MauiImage Include="Resources\Images\team_logos\los_angeles_clippers_logo.png" />
+		<MauiImage Include="Resources\Images\team_logos\los_angeles_lakers_logo.png" />
+		<MauiImage Include="Resources\Images\team_logos\memphis_grizzlies_logo.png" />
+		<MauiImage Include="Resources\Images\team_logos\miami_heat_logo.png" />
+		<MauiImage Include="Resources\Images\team_logos\minnesota_timberwolves_logo.png" />
+		<MauiImage Include="Resources\Images\team_logos\new_orleans_pelicans_logo.png" />
+		<MauiImage Include="Resources\Images\team_logos\new_york_knicks_logo.png" />
+		<MauiImage Include="Resources\Images\team_logos\oklahoma_city_thunder_logo.png" />
+		<MauiImage Include="Resources\Images\team_logos\orlando_magic_logo.png" />
+		<MauiImage Include="Resources\Images\team_logos\philadelphia_76ers_logo.png" />
+		<MauiImage Include="Resources\Images\team_logos\phoenix_suns_logo.png" />
+		<MauiImage Include="Resources\Images\team_logos\portland_trail_blazers_logo.png" />
+		<MauiImage Include="Resources\Images\team_logos\sacramento_kings_logo.png" />
+		<MauiImage Include="Resources\Images\team_logos\san_antonio_spurs_logo.png" />
+		<MauiImage Include="Resources\Images\team_logos\toronto_raptors_logo.png" />
+		<MauiImage Include="Resources\Images\team_logos\utah_jazz_logo.png" />
+		<MauiImage Include="Resources\Images\team_logos\washington_wizards_logo.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -57,14 +87,75 @@
 	  <None Remove="Resources\basketball-background.jpg" />
 	  <None Remove="Resources\AppIcon\Screenshot 2023-05-30 at 16.26.53 copy.svg" />
 	  <None Remove="Resources\watercolor-warriors-png-logo-20.png" />
+	  <None Remove="Resources\team logos\chicago_bulls_logo.png" />
+	  <None Remove="Resources\team logos\golden_state_warriors_logo.png" />
+	  <None Remove="Resources\team logos\memphis_grizzlies_logo.png" />
+	  <None Remove="Resources\team logos\los_angeles_lakers_logo.png" />
+	  <None Remove="Resources\team logos\portland_trail_blazers_logo.png" />
+	  <None Remove="Resources\team logos\los_angeles_clippers_logo.png" />
+	  <None Remove="Resources\team logos\new_york_knicks_logo.png" />
+	  <None Remove="Resources\team logos\atlanta_hawks_logo.png" />
+	  <None Remove="Resources\team logos\new_orleans_pelicans_logo.png" />
+	  <None Remove="Resources\team logos\brooklyn_nets_logo.png" />
+	  <None Remove="Resources\team logos\sacramento_kings_logo.png" />
+	  <None Remove="Resources\team logos\milwaukee_bucks_logo.png" />
+	  <None Remove="Resources\team logos\dallas_mavericks_logo.png" />
+	  <None Remove="Resources\team logos\washington_wizards_logo.png" />
+	  <None Remove="Resources\team logos\detroit_pistons_logo.png" />
+	  <None Remove="Resources\team logos\boston_celtics_logo.png" />
+	  <None Remove="Resources\team logos\minnesota_timberwolves_logo.png" />
+	  <None Remove="Resources\team logos\orlando_magic_logo.png" />
+	  <None Remove="Resources\team logos\toronto_raptors_logo.png" />
+	  <None Remove="Resources\team logos\houston_rockets_logo.png" />
+	  <None Remove="Resources\team logos\phoenix_suns_logo.png" />
+	  <None Remove="Resources\team logos\cleveland_cavaliers_logo.png" />
+	  <None Remove="Resources\team logos\oklahoma_city_thunder_logo.png" />
+	  <None Remove="Resources\team logos\philadelphia_76ers_logo.png" />
+	  <None Remove="Resources\team logos\charlotte_hornets_logo.png" />
+	  <None Remove="Resources\team logos\utah_jazz_logo.png" />
+	  <None Remove="Resources\team logos\san_antonio_spurs_logo.png" />
+	  <None Remove="Resources\team logos\indiana_pacers_logo.png" />
+	  <None Remove="Resources\team logos\denver_nuggets_logo.png" />
+	  <None Remove="Resources\team logos\miami_heat_logo.png" />
+	  <None Remove="Resources\Images\team_logos\atlanta_hawks_logo.png" />
+	  <None Remove="Resources\Images\team_logos\boston_celtics_logo.png" />
+	  <None Remove="Resources\Images\team_logos\brooklyn_nets_logo.png" />
+	  <None Remove="Resources\Images\team_logos\charlotte_hornets_logo.png" />
+	  <None Remove="Resources\Images\team_logos\chicago_bulls_logo.png" />
+	  <None Remove="Resources\Images\team_logos\cleveland_cavaliers_logo.png" />
+	  <None Remove="Resources\Images\team_logos\dallas_mavericks_logo.png" />
+	  <None Remove="Resources\Images\team_logos\denver_nuggets_logo.png" />
+	  <None Remove="Resources\Images\team_logos\detroit_pistons_logo.png" />
+	  <None Remove="Resources\Images\team_logos\golden_state_warriors_logo.png" />
+	  <None Remove="Resources\Images\team_logos\houston_rockets_logo.png" />
+	  <None Remove="Resources\Images\team_logos\indiana_pacers_logo.png" />
+	  <None Remove="Resources\Images\team_logos\los_angeles_clippers_logo.png" />
+	  <None Remove="Resources\Images\team_logos\los_angeles_lakers_logo.png" />
+	  <None Remove="Resources\Images\team_logos\memphis_grizzlies_logo.png" />
+	  <None Remove="Resources\Images\team_logos\miami_heat_logo.png" />
+	  <None Remove="Resources\Images\team_logos\milwaukee_bucks_logo.png" />
+	  <None Remove="Resources\Images\team_logos\minnesota_timberwolves_logo.png" />
+	  <None Remove="Resources\Images\team_logos\new_orleans_pelicans_logo.png" />
+	  <None Remove="Resources\Images\team_logos\new_york_knicks_logo.png" />
+	  <None Remove="Resources\Images\team_logos\oklahoma_city_thunder_logo.png" />
+	  <None Remove="Resources\Images\team_logos\orlando_magic_logo.png" />
+	  <None Remove="Resources\Images\team_logos\philadelphia_76ers_logo.png" />
+	  <None Remove="Resources\Images\team_logos\phoenix_suns_logo.png" />
+	  <None Remove="Resources\Images\team_logos\portland_trail_blazers_logo.png" />
+	  <None Remove="Resources\Images\team_logos\sacramento_kings_logo.png" />
+	  <None Remove="Resources\Images\team_logos\san_antonio_spurs_logo.png" />
+	  <None Remove="Resources\Images\team_logos\toronto_raptors_logo.png" />
+	  <None Remove="Resources\Images\team_logos\utah_jazz_logo.png" />
+	  <None Remove="Resources\Images\team_logos\washington_wizards_logo.png" />
+	  <None Remove="Resources\Images\team_logos\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Pages\" />
+	  <Folder Include="Resources\Images\team_logos\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <BundleResource Include="Resources\basketball-background.jpg" />
 	  <BundleResource Include="Resources\AppIcon\appicon.svg" />
-	  <BundleResource Include="Resources\warriors-logo.png" />
 	</ItemGroup>
 	<ItemGroup>
 	  <MauiIcon Remove="Resources\AppIcon\appicon.svg" />

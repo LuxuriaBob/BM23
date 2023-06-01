@@ -13,6 +13,8 @@
             />
             <Entry
                 Placeholder="First Name"
+                x:Name="FirstName_Entry"
+                PropertyChanged="FirstName_Entry_PropertyChanged"
                 AbsoluteLayout.LayoutBounds="220,20,150,30"
                 FontSize = "20"
                 TextColor="Black"
@@ -25,6 +27,8 @@
             />
             <Entry
                 Placeholder="Surname"
+                x:Name="Surname_Entry"
+                PropertyChanged="Surname_Entry_PropertyChanged"
                 AbsoluteLayout.LayoutBounds="220,60,150,30"
                 FontSize = "20"
                 TextColor="Black"
@@ -37,6 +41,7 @@
              />
             <Picker
                 x:Name="countryPicker"
+                SelectedIndexChanged="countryPicker_SelectedIndexChanged"
                 Title="Select a country"
                 AbsoluteLayout.LayoutBounds="220,88,200,50"
                 FontSize= "20"
@@ -61,7 +66,8 @@
                 TextColor="Black"
              />
             <Picker
-                x:Name="courrencyPicker"
+                x:Name="currencyPicker"
+                SelectedIndexChanged="currencyPicker_SelectedIndexChanged"
                 Title="Select a currency"
                 AbsoluteLayout.LayoutBounds="220,128,200,50"
                 FontSize= "20"
@@ -69,9 +75,9 @@
                 >
               <Picker.ItemsSource>
               <x:Array Type= "{x:Type x:String}">
-                  <x:String>Turkish Lira</x:String>
-                  <x:String>US Dollar</x:String>
-                  <x:String>Euro</x:String>
+                  <x:String>Turkish Lira ₺</x:String>
+                  <x:String>US Dollar $</x:String>
+                  <x:String>Euro £</x:String>
                   <x:String>Japanese Yen</x:String>
                   <x:String>Korean Won</x:String>
               </x:Array>
@@ -85,6 +91,7 @@
              />
             <Picker
                 x:Name="genderPicker"
+                SelectedIndexChanged="genderPicker_SelectedIndexChanged"
                 Title="Select a gender"
                 AbsoluteLayout.LayoutBounds="220,168,200,50"
                 FontSize= "20"
