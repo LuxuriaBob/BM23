@@ -7,7 +7,7 @@
         <AbsoluteLayout>
             <Label
                 Text="First Name"
-                AbsoluteLayout.LayoutBounds="30,20,200,100"
+                AbsoluteLayout.LayoutBounds= "30,20,200,100"
                 FontSize = "20"
                 TextColor="Black"
             />
@@ -15,13 +15,13 @@
                 Placeholder="First Name"
                 x:Name="FirstName_Entry"
                 PropertyChanged="FirstName_Entry_PropertyChanged"
-                AbsoluteLayout.LayoutBounds="220,20,150,30"
+                AbsoluteLayout.LayoutBounds= "220,20,150,30"
                 FontSize = "20"
                 TextColor="Black"
                 />
             <Label
                 Text="Surname"
-                AbsoluteLayout.LayoutBounds="30,60,200,100"
+                AbsoluteLayout.LayoutBounds= "30,60,200,100"
                 FontSize = "20"
                 TextColor="Black"
             />
@@ -29,13 +29,28 @@
                 Placeholder="Surname"
                 x:Name="Surname_Entry"
                 PropertyChanged="Surname_Entry_PropertyChanged"
-                AbsoluteLayout.LayoutBounds="220,60,150,30"
+                AbsoluteLayout.LayoutBounds= "220,60,150,30"
                 FontSize = "20"
                 TextColor="Black"
             />
-             <Label
+            <Label
+                Text="Date of Birth"
+                AbsoluteLayout.LayoutBounds= "30,100,200,100"
+                FontSize = "20"
+                TextColor="Black"
+                 />
+
+            <DatePicker
+                x:Name="datePicker"
+                TextColor="Black"
+                Date="01.01.1980"
+                DateSelected="datePicker_DateSelected"
+                AbsoluteLayout.LayoutBounds= "225,105,200,100"
+                />
+
+            <Label
                 Text="Country"
-                AbsoluteLayout.LayoutBounds="30,100,200,100"
+                AbsoluteLayout.LayoutBounds= "30,140,200,100"
                 FontSize = "20"
                 TextColor="Black"
              />
@@ -43,25 +58,25 @@
                 x:Name="countryPicker"
                 SelectedIndexChanged="countryPicker_SelectedIndexChanged"
                 Title="Select a country"
-                AbsoluteLayout.LayoutBounds="220,88,200,50"
+                AbsoluteLayout.LayoutBounds= "220,128,200,50"
                 FontSize= "20"
                 TextColor="Black"
                 >
-              <Picker.ItemsSource>
-              <x:Array Type= "{x:Type x:String}">
-                  <x:String>Turkey</x:String>
-                  <x:String>United States of America</x:String>
-                  <x:String>Germany</x:String>
-                  <x:String>England</x:String>
-                  <x:String>France</x:String>
-                  <x:String>Japan</x:String>
-                  <x:String>South Korea</x:String>
-              </x:Array>
-              </Picker.ItemsSource>
+                <Picker.ItemsSource>
+                    <x:Array Type= "{x:Type x:String}">
+                        <x:String>Turkey</x:String>
+                        <x:String>United States of America</x:String>
+                        <x:String>Germany</x:String>
+                        <x:String>England</x:String>
+                        <x:String>France</x:String>
+                        <x:String>Japan</x:String>
+                        <x:String>South Korea</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
             </Picker>
             <Label
                 Text="Select a currency"
-                AbsoluteLayout.LayoutBounds="30,140,200,100"
+                AbsoluteLayout.LayoutBounds="30,180,200,100"
                 FontSize = "20"
                 TextColor="Black"
              />
@@ -69,23 +84,23 @@
                 x:Name="currencyPicker"
                 SelectedIndexChanged="currencyPicker_SelectedIndexChanged"
                 Title="Select a currency"
-                AbsoluteLayout.LayoutBounds="220,128,200,50"
+                AbsoluteLayout.LayoutBounds="220,168,200,50"
                 FontSize= "20"
                 TextColor="Black"
                 >
-              <Picker.ItemsSource>
-              <x:Array Type= "{x:Type x:String}">
-                  <x:String>Turkish Lira ₺</x:String>
-                  <x:String>US Dollar $</x:String>
-                  <x:String>Euro £</x:String>
-                  <x:String>Japanese Yen</x:String>
-                  <x:String>Korean Won</x:String>
-              </x:Array>
-              </Picker.ItemsSource>
+                <Picker.ItemsSource>
+                    <x:Array Type= "{x:Type x:String}">
+                        <x:String>Turkish Lira ₺</x:String>
+                        <x:String>US Dollar $</x:String>
+                        <x:String>Euro £</x:String>
+                        <x:String>Japanese Yen</x:String>
+                        <x:String>Korean Won</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
             </Picker>
             <Label
                 Text="Select your gender"
-                AbsoluteLayout.LayoutBounds="30,180,200,100"
+                AbsoluteLayout.LayoutBounds="30,220,200,100"
                 FontSize = "20"
                 TextColor="Black"
              />
@@ -93,18 +108,18 @@
                 x:Name="genderPicker"
                 SelectedIndexChanged="genderPicker_SelectedIndexChanged"
                 Title="Select a gender"
-                AbsoluteLayout.LayoutBounds="220,168,200,50"
+                AbsoluteLayout.LayoutBounds="220,208,200,50"
                 FontSize= "20"
                 TextColor="Black"
                 >
-              <Picker.ItemsSource>
-              <x:Array Type= "{x:Type x:String}">
-                  <x:String>Male</x:String>
-                  <x:String>Female</x:String>
-                  <x:String>Non-binary</x:String>
-                  <x:String>Transgender</x:String>
-              </x:Array>
-              </Picker.ItemsSource>
+                <Picker.ItemsSource>
+                    <x:Array Type= "{x:Type x:String}">
+                        <x:String>Male</x:String>
+                        <x:String>Female</x:String>
+                        <x:String>Non-binary</x:String>
+                        <x:String>Transgender</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
             </Picker>
             <Button
                 x:Name="PreviousBtn"
@@ -115,9 +130,9 @@
             <Button
                 x:Name="NextBtn"
                 Text="Next"
-                AbsoluteLayout.LayoutBounds="605,250,100,50"
+                AbsoluteLayout.LayoutBounds="605,250,400,50"
                 Clicked="NextBtn_Clicked"
                 />
         </AbsoluteLayout>
-    </ContentPage.Content>        
+    </ContentPage.Content>
 </ContentPage>

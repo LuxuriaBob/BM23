@@ -5,6 +5,7 @@ namespace BM23.Pages;
 public partial class NewGame : ContentPage
 {
     string selectedFirstName, selectedSurname, selectedCountry, selectedCurrency, selectedGender;
+    DateTime birthDate;
 
     public NewGame()
     {
@@ -36,7 +37,8 @@ public partial class NewGame : ContentPage
             || string.IsNullOrWhiteSpace(Surname_Entry.Text)
             || countryPicker.SelectedIndex == -1
             || currencyPicker.SelectedIndex == -1
-            || genderPicker.SelectedIndex == -1)
+            || genderPicker.SelectedIndex == -1
+            )
         {
             // Entries are not filled, show an alert or handle the validation as per your requirement
             DisplayAlert("Validation Error", "Please fill all information.", "OK");
@@ -84,5 +86,12 @@ public partial class NewGame : ContentPage
             selectedGender = genderPicker.SelectedItem.ToString();
             // Do something with the selected country (store it, process it, etc.)
         }
+    }
+
+    void datePicker_DateSelected(System.Object sender, Microsoft.Maui.Controls.DateChangedEventArgs e)
+    {
+         birthDate = e.NewDate;
+        NextBtn.Text = birthDate.ToString();
+ 
     }
 }

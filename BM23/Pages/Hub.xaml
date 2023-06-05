@@ -5,12 +5,16 @@
             BarBackgroundColor="Green"
             BarTextColor="White"
             SelectedTabColor="Black"
-            UnselectedTabColor="Gray"
+            UnselectedTabColor="White"
 
             >
-
+    <local:Calendar Title="Calendar"/>
+    <local:Messages Title="Messages"/>
     <local:Roster Title="Roster"/>
+    <local:Manager Title="Manager" />
+    <local:FrontOffice Title="FrontOffice"/>
+    <local:Search Title="Search"/>
     <local:Settings Title="Settings"/>
     <local:ExitGame Title="Exit"/>
-    <local:Messages Title="Messages"/>
+    
 </TabbedPage>
