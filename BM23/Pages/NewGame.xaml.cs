@@ -6,9 +6,9 @@ public partial class NewGame : ContentPage
 {
     string selectedFirstName, selectedSurname, selectedCountry, selectedCurrency, selectedGender;
 
-	public NewGame()
-	{
-		InitializeComponent();
+    public NewGame()
+    {
+        InitializeComponent();
 
         var countryList = new List<string>();
         countryList.Add("Turkey");
@@ -19,11 +19,11 @@ public partial class NewGame : ContentPage
         countryList.Add("Japan");
         countryList.Add("South Korea");
 
-        NextBtn.IsEnabled = false;
+        NextBtn.IsEnabled = true;
 
         Picker countryPicker = new Picker { Title = "Select a country" };
-            countryPicker.ItemsSource = countryList;
-	}
+        countryPicker.ItemsSource = countryList;
+    }
 
     void PreviousBtn_Clicked(System.Object sender, System.EventArgs e)
     {
@@ -32,7 +32,21 @@ public partial class NewGame : ContentPage
 
     void NextBtn_Clicked(System.Object sender, System.EventArgs e)
     {
-        Navigation.PushAsync(new TeamSelect());
+        if (string.IsNullOrWhiteSpace(FirstName_Entry.Text)
+            || string.IsNullOrWhiteSpace(Surname_Entry.Text)
+            || countryPicker.SelectedIndex == -1
+            || currencyPicker.SelectedIndex == -1
+            || genderPicker.SelectedIndex == -1)
+        {
+            // Entries are not filled, show an alert or handle the validation as per your requirement
+            DisplayAlert("Validation Error", "Please fill all information.", "OK");
+        }
+        else
+        {
+            // Entries are filled, proceed with the desired action
+            // Your code here
+            Navigation.PushAsync(new TeamSelect());
+        }
     }
 
     void FirstName_Entry_PropertyChanged(System.Object sender, System.ComponentModel.PropertyChangedEventArgs e)
@@ -70,18 +84,5 @@ public partial class NewGame : ContentPage
             selectedGender = genderPicker.SelectedItem.ToString();
             // Do something with the selected country (store it, process it, etc.)
         }
-    }
-
-    void entryCheck()
-    {
-        if ((!string.IsNullOrEmpty(selectedFirstName)) && (!string.IsNullOrEmpty(selectedSurname))
-            && (!string.IsNullOrEmpty(selectedCountry)) && (!string.IsNullOrEmpty(selectedCurrency))
-            && (!string.IsNullOrEmpty(selectedGender)))
-        {
-            NextBtn.IsEnabled = true;
-        } else {
-            NextBtn.IsEnabled = false;
-        }
-
     }
 }

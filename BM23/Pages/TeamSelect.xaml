@@ -2,9 +2,10 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BM23.Pages.TeamSelect"
-             BackgroundColor= "AntiqueWhite">
+             BackgroundColor= "AntiqueWhite"
+             >
 
-    <Grid RowDefinitions="50, 200, 200, 200, 200, 200, 200" ColumnDefinitions="200, 200,200,200, 200, 200, 200" Padding="50">
+    <Grid RowDefinitions="50, 200, 200, 200, 200, 200, 200" ColumnDefinitions="200, 200,200,200, 200, 200, 100, 200" Padding="50">
         <Label
             x:Name="chooseLabel"
             Text="Choose a team"
@@ -42,6 +43,18 @@
         <ImageButton x:Name="portlandBtn" Source="portland_trail_blazers_logo.png" Scale="0.7" Grid.Row="5" Grid.Column="3" />
         <ImageButton x:Name="laLakersBtn" Source="los_angeles_lakers_logo.png" Scale="0.7" Grid.Row="5" Grid.Column="4" />
         <ImageButton x:Name="sanAntonioBtn" Source="san_antonio_spurs_logo.png" Scale="0.7" Grid.Row="5" Grid.Column="5" />
+
+        <Button
+            x:Name="ContinueBtn"
+            Text="Continue"
+            FontSize="24"
+            TextColor="Black"
+            Grid.Row="5"
+            Grid.Column="7"
+            HorizontalOptions="Start"
+            VerticalOptions="Center"
+            Clicked="ContinueBtn_Clicked"
+        />
 
     </Grid>
 </ContentPage>

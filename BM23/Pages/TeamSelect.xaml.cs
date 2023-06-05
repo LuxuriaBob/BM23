@@ -52,6 +52,8 @@ namespace BM23.Pages
                 sanAntonioBtn,
             };
 
+            ContinueBtn.IsEnabled = false;
+
             foreach (var ImageButton in ImageButtonList)
             {
                 ImageButton.Clicked += ImageButton_Clicked;
@@ -78,7 +80,15 @@ namespace BM23.Pages
             if (sender is ImageButton clickedImageButton)
             {
                 IncreaseButtonScale(clickedImageButton);
+                var clickedButton = (ImageButton)sender;
+
+                ContinueBtn.IsEnabled = true;
             }
+        }
+
+        void ContinueBtn_Clicked(System.Object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new Hub());
         }
     }
 }
