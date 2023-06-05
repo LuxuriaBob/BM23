@@ -1,9 +1,12 @@
-﻿namespace BM23.Pages;
+﻿using Microsoft.Maui.Controls;
 
-public partial class Hub : ContentPage
+namespace BM23.Pages
 {
-	public Hub()
-	{
-		InitializeComponent();
-	}
+    public partial class Hub : TabbedPage
+    {
+        public Hub()
+        {
+            InitializeComponent();
+        }
+    }
 }

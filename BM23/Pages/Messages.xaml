@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BM23.Pages.Messages"
+             Title="Messages">
+    <VerticalStackLayout>
+        <ListView >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="Welcome to our team"
+                      Detail="Lorem ipsum dolar sit amet" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </VerticalStackLayout>
+</ContentPage>

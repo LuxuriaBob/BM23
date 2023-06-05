@@ -148,10 +148,12 @@
 	  <None Remove="Resources\Images\team_logos\utah_jazz_logo.png" />
 	  <None Remove="Resources\Images\team_logos\washington_wizards_logo.png" />
 	  <None Remove="Resources\Images\team_logos\" />
+	  <None Remove="Controls\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Pages\" />
 	  <Folder Include="Resources\Images\team_logos\" />
+	  <Folder Include="Controls\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <BundleResource Include="Resources\basketball-background.jpg" />

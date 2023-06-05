@@ -81,13 +81,13 @@ namespace BM23.Pages
             {
                 IncreaseButtonScale(clickedImageButton);
                 var clickedButton = (ImageButton)sender;
-
                 ContinueBtn.IsEnabled = true;
             }
         }
 
         void ContinueBtn_Clicked(System.Object sender, System.EventArgs e)
         {
+            
             Navigation.PushAsync(new Hub());
         }
     }
