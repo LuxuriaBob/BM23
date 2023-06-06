@@ -87,7 +87,6 @@ namespace BM23.Pages
 
         void ContinueBtn_Clicked(System.Object sender, System.EventArgs e)
         {
-            
             Navigation.PushAsync(new Hub());
         }
     }

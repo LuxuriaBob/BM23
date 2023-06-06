@@ -1,17 +1,24 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<!--<?xml version="1.0" encoding="utf-8" ?>-->
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BM23.Pages.Search"
              >
     <AbsoluteLayout>
         <Entry
-                Placeholder="Search a player or a team"
-                x:Name="Search_Entry"
-                PropertyChanged="Search_Entry_PropertyChanged"
-                AbsoluteLayout.LayoutBounds="20,20,500,30"
-                FontSize = "20"
-                TextColor="White"
-                />
-    </AbsoluteLayout>
+            Placeholder="Search a player or a team"
+            x:Name="Search_Entry"
+            PropertyChanged="Search_Entry_PropertyChanged"
+            AbsoluteLayout.LayoutBounds="20,20,500,30"
+            FontSize = "20"
+            TextColor="White"
+         />
 
+        <ScrollView>
+            <StackLayout>
+                <Label
+                    Text="asd"
+                />
+            </StackLayout>
+        </ScrollView>
+    </AbsoluteLayout>
 </ContentPage>
