@@ -14,5 +14,30 @@
             FontSize = "20"
             TextColor="White"
          />
+        <Button
+            x:Name="SearchButton"
+            AbsoluteLayout.LayoutBounds="550,20,80,30"
+            Clicked="SearchButton_Clicked"
+            Text="Search"
+            >
+        </Button>
+        <!--Grid
+            RowDefinitions="50,50,50,50,50,50,50,50,50"
+            ColumnDefinitions="100"
+            AbsoluteLayout.LayoutBounds="20,70,50,50"
+            >
+        </Grid-->
+        <Label
+            x:Name="label1"
+            AbsoluteLayout.LayoutBounds="400,400,400,200"
+            >
+        </Label>
+        <Label
+            x:Name="label2"
+            AbsoluteLayout.LayoutBounds="400,600,400,200"
+            >
+        </Label>
+
+
     </AbsoluteLayout>
 </ContentPage>

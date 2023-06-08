@@ -7,51 +7,76 @@ namespace BM23.Pages;
 
 public partial class Search : ContentPage
 {
-    string query;
+    string query1;
+    string query = "Jim";
+    List<string> results = new List<string>();
+    List<string> results2 = new List<string>();
     private const string ConnectionString = "Server=localhost;Database=PracticeDB;Uid=root;Pwd=;";
 
     public Search()
-	{
-		InitializeComponent();
+    {
+        InitializeComponent();
 
-        // Create the list view to display the results
-        var listView = new ListView();
+        // Create the grid to display the results
+        //var grid = new Microsoft.Maui.Controls.Grid();
 
         // Create a MySQL connection
         using (var connection = new MySqlConnection(ConnectionString))
         {
             connection.Open();
 
+            var command = "SELECT * FROM employee";
             // Create a command to execute the query
-            var command = new MySqlCommand("SELECT * FROM employee", connection);
+            var fullCommand = new MySqlCommand(command, connection);
 
             // Execute the query and retrieve the results
-            using (var reader = command.ExecuteReader())
+            using (var reader = fullCommand.ExecuteReader())
             {
-                // Create a list to hold the query result
-                var results = new List<string>();
-
                 // Loop through the query result and add each row to the list
                 while (reader.Read())
                 {
                     // Assuming the "employee" table has a "name" column, you can change it accordingly
                     results.Add(reader.GetString("first_name"));
+                    
+                    // Set the list as the data source for the grid
+                    //grid.Children.Add(label1);
                 }
+            }
 
-                // Set the list as the data source for the list view
-                listView.ItemsSource = results;
+            foreach (string result in results)
+            {
+                label1.Text += result + " ";
             }
         }
 
+        /*
         // Add the list view to the page's content
-        Content = new Microsoft.Maui.Controls.StackLayout
+        Content = new Microsoft.Maui.Controls.AbsoluteLayout
         {
-            Children = { listView }
+            Children = { grid }
         };
+        */
+    }
+
+    void FilterElements()
+    {
+        foreach (string element in results)
+        {
+            if (element == query1)
+            {
+                results2.Add(element);
+                label2.Text += element + " ";
+            }
+        }
     }
 
     void Search_Entry_PropertyChanged(System.Object sender, System.ComponentModel.PropertyChangedEventArgs e)
     {
-		query = Search_Entry.Text;
+		query1 = Search_Entry.Text;
+    }
+
+    void SearchButton_Clicked(System.Object sender, System.EventArgs e)
+    {
+        FilterElements();
     }
 }
